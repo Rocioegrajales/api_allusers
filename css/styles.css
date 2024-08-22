@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {    
+    font-family: 'Montserrat', sans-serif;       
+    min-height: 100vh;
+    /* background-color: rgb(101, 136, 136);  */
+}
+
+.container {      
+    /* grid-template-columns: 3fr;
+    grid-template-rows: 3fr 90px;     */
+    /* background-color: rgb(139, 172, 172); */
+    border: solid 2px red;   
+    align-content: center;
+}
+
+h2 {    
+    text-align: center;
+    color: aliceblue;
+}
+
+.allForm {    
+    display: inline-grid;
+    grid-template-columns: repeat(3fr, 50px);
+    grid-template-rows: repeat(3, 130px);    
+    justify-content: center;    
+    align-content: center;
+    width: 80%;
+    margin: 50px; 
+    padding: 20px;   
+    gap: 20px;   
+    box-shadow: 0 0 10px rgba(0.8, 0, 0, 0.5);
+    background-color: rgb(125, 171, 171);    
+    border: solid 2px blue;     
+}
+
+.register {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr;      */
+    padding: 10px;
+    gap: 10px; 
+    border: solid 2px orange;
+    background-color: rgb(35, 117, 123); 
+}
+
+.login {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: fr;    */
+    padding: 10px;
+    gap: 10px;   
+    border: solid 2px palevioletred;
+    background-color: rgb(35, 117, 123);   
+}
+
+
+.client {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: fr;     */
+    padding: 10px; 
+    gap: 10px;
+    border: solid 2px purple;
+    background-color: rgb(35, 117, 123);   
+}
+
+ #registerForm, #loginForm, #clientForm {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: none;    
+}
+
+button, input {
+    border: none;
+    width: 80%;
+    height: 25px;
+    border-radius: 6px;
+    background: lightgray;    
+}
+
+button:hover {    
+    background-color: rgb(54, 145, 151);
+    color: aliceblue;
+}
