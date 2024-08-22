@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(res);
             console.log('Hola2');
                 
-            if (res.status == 204) {
+            if (res.status === 200) {
                 alert('Ingreso de datos exitoso')
                 console.log('Hola');
                 

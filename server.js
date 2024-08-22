@@ -3,13 +3,18 @@ const cors = require('cors');
 const {sequelize} = require('./config/db');
 // const {connectDB} = require('./config/db');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 
 // connectDB()
 
 app.use(cors());
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
 
 // Rutas
 app.use('/api/auth', require('./routes/auth'));
