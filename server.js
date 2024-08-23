@@ -1,13 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const {sequelize} = require('./config/db');
-// const {connectDB} = require('./config/db');
 const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-
-// connectDB()
 
 app.use(cors());
 app.use(bodyParser.json());
