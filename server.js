@@ -28,3 +28,5 @@ app.listen(PORT, async() => {
         console.error('Error base de datos', err)
     }
 })
+
+// mysql://root:vyRmfsvQRjhkYUknzwkLskVBgTsjrYub@autorack.proxy.rlwy.net:21701/railway
