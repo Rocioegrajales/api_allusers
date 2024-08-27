@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;       
 
         try {
-            const res = await fetch('http://api/auth/register', {
+            const res = await fetch('http://localhost:5000/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('loginPassword').value;        
 
     try {
-        const res = await fetch('http://api/auth/login',{
+        const res = await fetch('http://localhost:5000/api/auth/login',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const birthday = document.getElementById('birthday').value;       
     
         try {
-            const res = await fetch('http://api/contact/send',{
+            const res = await fetch('http://localhost:5000/api/contact/send',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
