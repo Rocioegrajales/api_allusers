@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('loginPassword').value;        
 
     try {
-        const res = await fetch('http:///api/auth/login',{
+        const res = await fetch('http://api/auth/login',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const birthday = document.getElementById('birthday').value;       
     
         try {
-            const res = await fetch('http:///api/contact/send',{
+            const res = await fetch('http://api/contact/send',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
