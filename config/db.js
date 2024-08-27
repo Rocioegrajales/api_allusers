@@ -1,4 +1,4 @@
-const {Sequelize, ConnectionTimedOutError} = require('sequelize');
+const {Sequelize, connectDB} = require('sequelize');
 require ("dotenv").config()
 
 const sequelize = new Sequelize(process.env.DATABASE_URL, {   
