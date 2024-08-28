@@ -8,10 +8,11 @@ require ("dotenv").config()
 
 const app = express();
 
-app.use(cors('https://allusersfront.onrender.com'));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', (req, res) => {   
+app.get('/', (req, res) => { 
+    console.log('enviando archivo index.html');
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
@@ -19,7 +20,7 @@ app.get('/', (req, res) => {
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contact', require('./routes/contact'));
 
-const PORT = process.env.PORT;
+const PORT = process.env.DB_PORT;
 
 app.listen(PORT, async() => {
     console.log(`Server is running on port ${PORT}`)       

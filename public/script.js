@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const data = await res.json()
+            console.log('Response status:', res.status);
+            console.log('Response data:', data);
+
             if (res.status === 200) {
                 alert('Registro exitoso')
             }else {
